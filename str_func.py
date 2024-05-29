@@ -4,7 +4,8 @@ def str_to_upper(text: str) -> str:
     :param text: str
     :return: str
     """
-    return text.upper()
+    if type(text) is str:
+        return text.upper()
 
 
 def symbols_to_upper(text: str) -> str:
@@ -13,4 +14,5 @@ def symbols_to_upper(text: str) -> str:
     :param text: str
     :return: str
     """
-    return text.title()
+    if type(text) is str:
+        return text.title()
